@@ -1,0 +1,21 @@
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 4px;
+
+    li {
+        flex: 1;
+        display: flex;
+        padding: 4px;
+
+        a {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border: 1px solid #CCC;
+        }
+    }
+}
