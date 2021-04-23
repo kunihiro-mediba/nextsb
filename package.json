@@ -4,11 +4,11 @@
     "private": true,
     "scripts": {
         "dev": "next dev",
-        "clean": "rm -rf .next out",
+        "clean": "rm -rf .next build/* docs/*",
         "build": "npm run clean && next build",
         "start": "next start",
-        "export": "npm run build && next export",
-        "serve": "http-server -p 3000 ./out"
+        "export": "npm run build && next export -o docs",
+        "serve": "http-server -p 3000 ./docs"
     },
     "dependencies": {
         "next": "10.1.3",
