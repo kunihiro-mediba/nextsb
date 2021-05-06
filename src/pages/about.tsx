@@ -3,10 +3,9 @@ import Head from "next/head";
 
 import { Navigation } from "../component/Navigation";
 
-export const AboutPage: React.FC = () => {
+export const AboutPage: React.FC = (): React.ReactElement => {
     const [a, setA] = useState(0);
     const [b, setB] = useState(0);
-    console.log({ a, b });
     return (
         <>
             <Head>
