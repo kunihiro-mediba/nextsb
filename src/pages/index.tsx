@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 
-import { Navigation } from "../component/Navigation";
+import { Navigation } from "../components/Navigation";
 
 interface Props {
     serverTime: string;
@@ -24,8 +24,8 @@ export default function Home({ serverTime }: Props): React.ReactElement {
 
 export const getStaticProps = async (): Promise<{ props: Props }> => {
     return {
-        props:{
-            serverTime: (new Date()).toISOString(),
+        props: {
+            serverTime: new Date().toISOString(),
         },
     };
 };
