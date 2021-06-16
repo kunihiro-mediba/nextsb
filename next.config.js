@@ -1,9 +1,9 @@
-const basePath = process.env.BASE_PATH ?? "";
+const basePath = process.env["BASE_PATH"] ?? "";
 
 module.exports = {
-    productionBrowserSourceMaps: true,
-    // trailingSlash: true,
     basePath,
     // distDir: "build",
+    productionBrowserSourceMaps: true,
+    reactStrictMode: true,
     trailingSlash: true,
 };

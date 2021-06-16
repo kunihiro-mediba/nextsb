@@ -5,32 +5,18 @@ module.exports = {
         es6: true,
         node: true,
     },
+    plugins: ["@typescript-eslint", "jest"],
     extends: [
         "eslint:recommended",
-        "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
-        "plugin:react/recommended",
-        "plugin:react-hooks/recommended",
+        "plugin:jest/recommended",
+        "next",
+        "next/core-web-vitals",
         "prettier",
     ],
-    parser: "@typescript-eslint/parser",
-    parserOptions: {
-        project: "./tsconfig.json",
-    },
-    plugins: [
-        "@typescript-eslint",
-        "react",
-        "react-hooks",
-    ],
-    settings: {
-        react: {
-            version: "detect",
-        },
-    },
     rules: {
         "curly": "error",
+        "no-else-return": "error",
         // "no-console": "warn",
-        "react/prop-types": "off",
-        "react/react-in-jsx-scope": "off",
     },
 };
